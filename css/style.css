@@ -1,3 +1,12 @@
-.color-white{
-    color:#FFFFFF
+nav {
+    color:#000000;
+    background-color: #FFFFFF;
+}
+main {
+    color:#FFFFFF;
+    background-color:#000000;
+}
+footer {
+    color: #000000;
+    background-color: #FFFFFF;
 }
