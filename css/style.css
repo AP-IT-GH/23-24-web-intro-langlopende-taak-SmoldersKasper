@@ -13,3 +13,74 @@ footer {
 .border-blue {
     border-color:#0B3D91 ;
 }
+
+/* Container holding the image and the text */
+.container {
+   position: relative;
+   text-align: center;
+   color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+  
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+  
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+  
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+  
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Centered top text */
+.centered-top {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-image {
+    background-image:url(/assets/Earth_Space.jpg);
+    height: 100vh;
+    width: auto;
+}
+
+.btn-index {
+    border: 2px solid black;
+}
+
+.blue {
+    border-color: #0B3D91;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.blue:hover {
+    background: #0B3D91;
+    color: #FFFFFF;
+}
