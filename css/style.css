@@ -71,6 +71,7 @@ footer {
     background-image:url(/assets/Earth_Space.jpg);
     height: 100vh;
     width: auto;
+    background-position: center;
 }
 
 .btn-index {
