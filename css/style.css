@@ -13,9 +13,6 @@ footer {
     color: #000000;
     background-color: #FFFFFF;
 }
-.border-blue {
-    border-color:#0B3D91 ;
-}
 
 /* Container holding the image and the text */
 .container {
@@ -74,7 +71,7 @@ footer {
     background-position: center;
 }
 
-.btn-index {
+.btn-border {
     border: 2px solid black;
 }
 
@@ -87,4 +84,11 @@ footer {
 .blue:hover {
     background: #0B3D91;
     color: #FFFFFF;
+}
+
+.card {
+    color: #000000;
+    background-color: #FFFFFF;
+    border-color: #0B3D91;
+    border-width: 3px;
 }
