@@ -1,62 +1,37 @@
 body {
     background-color: #000000;
+    min-height: 400px;
+    margin-bottom: 20px;
+    clear: both;
 }
 
 nav {
     color:#000000;
     background-color: #FFFFFF;
 }
+
 main {
     color:#FFFFFF;
 }
+
 footer {
     color: #000000;
     background-color: #FFFFFF;
 }
 
-/* Container holding the image and the text */
 .container {
    position: relative;
    text-align: center;
    color: white;
 }
 
-/* Bottom left text */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-  
-/* Top left text */
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-  
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-  
-/* Bottom right text */
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-  
-/* Centered text */
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Centered top text */
+
 .centered-top {
     position: absolute;
     top: 25%;
@@ -65,7 +40,7 @@ footer {
 }
 
 .bg-image {
-    background-image:url(/assets/Earth_Space.jpg);
+    background-image:url(/assets/Earth-Space.jpg);
     height: 100vh;
     width: auto;
     background-position: center;
@@ -75,13 +50,13 @@ footer {
     border: 2px solid black;
 }
 
-.blue {
+.btn-blue {
     border-color: #0B3D91;
     color: #FFFFFF;
     background: #000000;
 }
 
-.blue:hover {
+.btn-blue:hover {
     background: #0B3D91;
     color: #FFFFFF;
 }
@@ -91,4 +66,8 @@ footer {
     background-color: #FFFFFF;
     border-color: #0B3D91;
     border-width: 3px;
+    height: 100%;
+}
+.card-footer {
+    background-color: #FFFFFF;
 }
