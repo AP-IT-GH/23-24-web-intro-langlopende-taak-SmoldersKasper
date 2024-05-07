@@ -33,6 +33,10 @@ span {
    color: white;
 }
 
+.navbar-right {
+    float: right;
+}
+
 .centered {
     position: absolute;
     top: 50%;
@@ -48,7 +52,7 @@ span {
 }
 
 .bg-image {
-    background-image:url(/assets/Earth-Space.jpg);
+    background-image:url(/assets/earth-space.jpg);
     height: 100vh;
     width: auto;
     background-position: center;
