@@ -13,6 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script> 
     <!--Eigen CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Leaflet-->
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!--Mapstyle CSS-->
+    <link rel="stylesheet" href="css/mapStyle.css">
+    <!--Leaflet Javascript-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <!--mapscript javascript-->
+    <script src="js/VRT-mapScript.js" defer></script>
+
     <title>Televisie</title>
 </head>
 <body>
@@ -60,7 +75,7 @@
     <main>
         <section class="container-fluid row">
             <section class="col-lg-9 offset-lg-1 py-4">
-                <article class="col-8">
+                <article class="col-12 col-md-8">
                     <p>
                         Satelliettechnologie heeft een revolutionaire impact gehad op de manier waarop televisiesignalen worden gedistribueerd en ontvangen over de hele wereld. Met behulp van satellieten kunnen televisiezenders hun programma's wereldwijd uitzenden, waardoor kijkers toegang hebben tot een breed scala aan inhoud, ongeacht hun locatie.
                     </p>
@@ -86,14 +101,14 @@
                         Met satellieten als kern van televisie-uitzendingen, blijft deze technologie evolueren en innoveren om kijkers wereldwijd te voorzien van hoogwaardige inhoud, waar ze zich ook bevinden.
                     </p>
                 </article>
-                <article>
+                <article class="col-12 col-md-4">
                     <figure>
                         <img src="" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </article>
             </section>
-            <aside class="col-lg-2 border-side sidebar border rounded d-none d-md-block py-2">
+            <aside class="col-lg-2 border-side sidebar border rounded d-none d-lg-block py-2">
                 <h2>
                     inhoud
                 </h2>
@@ -107,8 +122,26 @@
                     <li>
                         <a href="#titel4">HD en Ultra HD Uitzendingen: Verbeterde Kijkervaring</a>
                     </li>
+                    <li>
+                        <a href="#titel5">HD en Ultra HD Uitzendingen: Verbeterde Kijkervaring</a>
+                    </li>
                 </ol>
             </aside>
+        </section>
+        <section class="row">
+            <section class="col-lg-9 offset-lg-1 py-4">
+                <article class="col-12 col-md-8">
+                    <h2 id="titel5">
+                        Televisie in België
+                    </h2>
+                    <p>
+                        De Vlaamse Radio- en Televisieomroeporganisatie (VRT) speelt een centrale rol in de Belgische media, met satelliettelevisie als cruciaal distributiekanaal voor VRT-programma's. Via satelliettelevisie kunnen zowel binnenlandse als internationale kijkers toegang krijgen tot een breed scala aan Vlaamse programma's, nieuws en culturele inhoud, waardoor de VRT haar bereik kan vergroten en haar identiteit en diversiteit kan versterken.
+                    </p>
+                    <section id="map">
+                        <div id="VRTmap"></div>
+                    </section>
+                </article>
+            </section>
         </section>
     </main>
     <footer class="container-fluid text-center fixed-bottom">&copy;Satalliteinfo.be</footer>

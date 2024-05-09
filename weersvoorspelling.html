@@ -13,6 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script> 
     <!--Eigen CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Leaflet-->
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!--Mapstyle CSS-->
+    <link rel="stylesheet" href="css/mapStyle.css">
+    <!--Leaflet Javascript-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <!--mapscript javascript-->
+    <script src="js/Weer-mapScript.js" defer></script>
+
     <title>Weersvoorspelling</title>
 </head>
 <body>
@@ -59,7 +74,80 @@
     </header>
     <main>
         <section class="container-fluid row">
-            
+            <section class="col-lg-9 offset-lg-1 py-4">
+                <article class="col-8">
+                    <p>
+                        Satellieten spelen een essentiële rol in weersvoorspellingen door meteorologen in staat te stellen om realtime informatie over de atmosfeer te verzamelen en te analyseren, wat resulteert in nauwkeurige voorspellingen en waarschuwingen voor extreme weersomstandigheden.
+                    </p>
+                    <h2 id="titel2">
+                        Observatie van de Atmosfeer: Realtime Gegevensverzameling
+                    </h2>
+                    <p>
+                        Met behulp van satellieten kunnen wetenschappers de atmosferische omstandigheden over grote gebieden observeren, waardoor ze gegevens kunnen verzamelen over wolkenpatronen, temperatuur, vochtigheid en andere belangrijke parameters die van invloed zijn op het weer.
+                    </p>
+                    <h2 id="titel3">
+                        Weersatellieten: Monitoring van Weersystemen
+                    </h2>
+                    <p>
+                        Speciale weersatellieten, zoals geostationaire en polaire satellieten, bieden een continu overzicht van weersystemen, waardoor meteorologen veranderingen in het weer kunnen volgen en voorspellen, en tijdig waarschuwingen kunnen uitgeven voor potentiële gevaren, zoals stormen, orkanen en tornado's.
+                    </p>
+                    <p>
+                        Door satellieten te gebruiken voor weersvoorspellingen, kunnen we de nauwkeurigheid van voorspellingen verbeteren en mensen en eigendommen beschermen tegen de gevolgen van extreme weersomstandigheden.
+                    </p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+            </section>
+            <aside class="col-lg-2 border-side sidebar border rounded d-none d-lg-block py-2">
+                <h2>
+                    inhoud
+                </h2>
+                <ol>
+                    <li>
+                        <a href="#titel2">Observatie van de Atmosfeer: Realtime Gegevensverzameling</a>
+                    </li>
+                    <li>
+                        <a href="#titel3">Weersatellieten: Monitoring van Weersystemen</a>
+                    </li>
+                    <li>
+                        <a href="#titel4">Weer in België</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+        <section class="row">
+            <section class="col-lg-9 offset-lg-1 py-4 row">
+                <article class="col-12 col-md-8">
+                    <table class="table caption-bottom">
+                        <thead>
+                            <tr>
+                                <th colspan="5"><h2 id="titel4">Weer in België</h2></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Test</th>
+                                <th>Test</th>
+                                <th>Test</th>
+                                <th>Test</th>
+                                <th>Test</th>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="col-12 col-md-4">
+                    <section id="map">
+                        <div id="Weermap"></div>
+                    </section>
+                </article>
+            </section>
         </section>
     </main>
     <footer class="container-fluid text-center fixed-bottom">&copy;Satalliteinfo.be</footer>

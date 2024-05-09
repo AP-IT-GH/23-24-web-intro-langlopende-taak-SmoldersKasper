@@ -114,3 +114,13 @@ span {
 .border-start {
     border-color: #0B3D91 !important;
 }
+
+/*table*/
+
+table {
+    background-color: #0B3D91;    
+}
+
+thead {
+    background-color: #0B3D91;
+}
