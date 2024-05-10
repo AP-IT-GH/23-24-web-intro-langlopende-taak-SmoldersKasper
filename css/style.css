@@ -1,7 +1,7 @@
 body {
     background-color: #000000;
     min-height: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     clear: both;
 }
 
@@ -114,5 +114,3 @@ span {
 .border-start {
     border-color: #0B3D91 !important;
 }
-
-/*table*/
