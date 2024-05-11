@@ -114,3 +114,9 @@ span {
 .border-start {
     border-color: #0B3D91 !important;
 }
+
+/* Table */
+
+table {
+    font-size:12px;
+}

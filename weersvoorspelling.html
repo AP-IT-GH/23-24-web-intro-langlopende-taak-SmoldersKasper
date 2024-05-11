@@ -27,6 +27,12 @@
      crossorigin=""></script>
     <!--mapscript javascript-->
     <script src="js/Weer-mapScript.js" defer></script>
+    <!--weerdata javascript-->
+    <script src="js/weerdata.js" defer></script>
+
+    <!--weerdata grafiek-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous" defer></script>
+    <script src="js/weer-grafiek.js" defer></script>
 
     <title>Weersvoorspelling</title>
 </head>
@@ -97,8 +103,8 @@
                 </article>
                 <article class="col-12 col-lg-4">
                     <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
+                        <img src="assets/orkaan-satelliet.jpg" alt="" height="100%">
+                        <figcaption>Orkaan gezien vanuit de ruimte &copy;Pexels</figcaption>
                     </figure>
                 </article>
             </section>
@@ -116,74 +122,38 @@
                     <li>
                         <a href="#titel4">Weer op de campus Ellermanstraat</a>
                     </li>
+                    <li>
+                        <a href="#titel5">Gemiddelde temperatuur in België tussen 1 en 7 mei</a>
+                    </li>
                 </ol>
             </aside>
         </section>
         <section class="container-fluid row">
             <section class="col-lg-9 offset-lg-1 row">
                 <article class="col-12 col-lg-8">
-                    <section class="card">
-                        <table class="table caption-bottom text-center">
-                            <thead class="text-center">
-                                <tr>
-                                    <th colspan="4"><h2 id="titel4">Weer op de campus Ellermanstraat</h2></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th colspan="4" scope="col">Temperatuur</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">Temperatuur nu</td>
-                                    <th scope="col">Temperatuur gevoel</td>
-                                    <th scope="col">Min Temperatuur</td>
-                                    <th scope="col">Max Temperatuur</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <i class="bi bi-thermometer-half"></i><br>
-                                        20°C
-                                    </td>
-                                    <td rowspan="2">
-                                        <i class="bi bi-thermometer-half"></i><br>
-                                        19°C
-                                    </td>
-                                    <td rowspan="2">
-                                        <i class="bi bi-thermometer"></i><br>
-                                        20°C
-                                    </td>
-                                    <td rowspan="2">
-                                        <i class="bi bi-thermometer-high"></i><br>
-                                        20°C
-                                    </td>
-                                </tr>
-                                <tr>
-                                    
-                                </tr>
-                                <tr>
-                                    <th colspan="2">Luchtdruk</th>
-                                    <th colspan="2">Luchtvochtigheid</th>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2" colspan="2">
-                                        <i class="bi bi-arrow-bar-down"></i><br>
-                                        1024 HPa
-                                    </td>
-                                    <td rowspan="2" colspan="2">
-                                        <i class="bi bi-droplet-half"></i><br>
-                                        58 %
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <section class="container-fluid">
+                        <section class="card" id="weerdata">
+                            <!--Tabel met weerdata via API-->
+                        </section>
                     </section>
-                    
                 </article>
                 <article class="col-12 col-lg-4">
-                    <section id="map">
-                        <div id="Weermap"></div>
-                    </section>
+                    <figure>
+                        <section id="map">
+                            <div id="Weermap"></div>
+                        </section>
+                        <figcaption>
+                            Leaflet kaart met temperatuur en wolkenlaag met behulp van <a href="https://openweathermap.org/" target="_blank">openweathermap </a>
+                        </figcaption>
+                    </figure>
                 </article>
+            </section>
+            <section class="offset-lg-1 col-lg-9 col-12">
+                <h2 id="titel5">
+                    Gemiddelde temperatuur in België tussen 1 en 7 mei
+                </h2>
+                <canvas class="my-4 w-100" id="myChart" height="400"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script><script src="js/weer-grafiek.js"></script>
             </section>
         </section>
     </main>
